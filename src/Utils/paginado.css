@@ -1,0 +1,226 @@
+.cardGridHome {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 230px);
+    gap: 20px;
+    padding: 40px;
+    justify-content: center;
+
+
+}
+
+@media (max-width:560px) {
+    .cardGridHome {
+        grid-template-columns: 100%;
+        margin: 0;
+        padding: 0;
+        margin-top:150px ;
+    }
+       
+}
+
+.divButtonHeart {
+    width: 80%;
+    height: 20px;
+    margin-left: 10%;
+    font-size: 10px;
+    display: flex;
+
+}
+
+.buttonHeart {
+    margin-bottom: 0%;
+    border: 1px solid black;
+    background: rgba(248, 0, 0, 0.752);
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    color: var(--colorText);
+}
+
+/* ------------PAGINADO  ------------ */
+
+
+.paginado {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.paginationUl {
+    display: flex;
+    position: absolute;
+    background: var(--colorSecundario);
+    border:1px solid var(--colorTextButton);
+    padding: 8px;
+    border-radius: 10px;
+    height: 18px;
+    align-items: center;
+}
+
+.paginationUl li {
+    color: var(--colorText);
+    list-style: none;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 0px 10px 0 10px;
+
+}
+
+.paginationUl li.numb {
+    list-style: none;
+    height: 45px;
+    width: 45px;
+    margin: 0 1px;
+    line-height: 45px;
+    border-radius: 50%;
+    color: var(--colorText);
+}
+
+.paginationUl li.first {
+    margin: 0px 3px 0 15px;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+}
+
+.paginationUl li.last {
+    margin: 25px -5px 0 -5px;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+
+}
+
+.paginationUl li.dots {
+    font-size: 22px;
+    cursor: default;
+    margin: 0px 5px 0 3px;
+}
+
+.paginationUl li .buttonPrev {
+    color: inherit;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    padding: 0 20px;
+    border-radius: 25px 5px 5px 25px;
+    margin: 0px;
+    top: 0;
+    width: 90px;
+    height: 20px;
+    background-color: var(--colorSecundario);
+}
+
+.paginationUl li button.buttonNext {
+    color: inherit;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    padding: 0 20px;
+    margin: 0px;
+    border-radius: 5px 25px 25px 5px;
+    width: 90px;
+    height: 20px;
+    background-color: var(--colorSecundario);
+}
+
+.paginationUl li.active {
+    background-color: white;
+    color:var(--colorTextButton);
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+}
+
+.paginationUl li.active,
+.paginationUl li.numb:hover,
+.paginationUl li.first:hover {
+    color: var(--colorTextButton);
+    background: var(--colorSecundario);
+    border: 1px solid var(--colorTextButton);
+    font-size: 30px;
+    line-height: 45px;
+}
+
+.paginationUl li.last:hover {
+    color: rgb(255, 255, 255);
+    background: var(--color5);
+    line-height: 25px;
+}
+
+/* @media (max-width: 767px) { */
+@media (max-width: 1200px) {
+ 
+                   
+    .paginado {
+        top: 10%;
+    }
+
+    .paginationUl {
+        position: relative;
+
+    }
+
+    .paginationUl li.numb {
+        display: none;
+    }
+
+    .paginationUl li.dots {
+        display: none;
+    }
+
+    .paginationUl li button.buttonPrev {
+        color: inherit;
+        border: none;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+        padding: 0 20px;
+        border-radius: 25px 5px 5px 25px;
+        width: 60px;
+        height: 40px;
+        background-color: var(--colorSecundario);
+    }
+
+    .paginationUl li button.buttonNext {
+        color: inherit;
+        border: none;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+        padding: 0 20px;
+        border-radius: 5px 25px 25px 5px;
+        width: 60px;
+        height: 40px;
+        background-color: var(--colorSecundario);
+
+    }
+
+    .paginationUl li button.buttonPrev i,
+    .paginationUl li button.buttonNext i {
+        display: none;
+    }
+
+    .paginationUl li.active {
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+    }
+
+ 
+
+
+}

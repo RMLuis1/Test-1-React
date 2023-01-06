@@ -1,0 +1,24 @@
+.liCard {
+    list-style: none;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+.tituloImg{
+    font-size: 16px;
+}
+.imagen {
+    border-radius: 10px;
+    width:200px;
+    height:200px;     
+}
+
+@media (max-width: 560px) {
+    .imagen {
+        width: 90%;
+        height: 230px;
+    }
+}
+

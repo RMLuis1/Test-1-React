@@ -1,0 +1,137 @@
+.divMensaje{
+    width:900px;
+    position: relative;
+    top: 100px;
+}
+.mensajeSpan{
+    margin-top:150px;
+    font-size:40px;
+    color: var(--colorTextButton);
+}
+
+.loaderMensaje{
+position: relative;
+
+}
+/* ----------------HEART------------------- */
+.heart, .heart2 {
+    position:relative;
+    display: flex;
+    width: 20px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    top: 10px;
+    transform: rotate(45deg);
+    transform-origin: 40px 40px;
+}
+.heart div {
+    top: 32px;
+    left: 32px;
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background: var(--colorPrimari);
+}
+
+.heart div:after,
+.heart div:before {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: var(--colorPrimari);}
+.heart2 div {
+    top: 32px;
+    left: 32px;
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background: rgb(255, 3, 3);
+}
+.heart2 div:after,
+.heart2 div:before {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: rgb(255, 3, 3);
+}
+.heart div:before, .heart2 div:before {
+    left: -16px;
+    border-radius: 50% 0 0 50%;
+}
+.heart div:after, .heart2 div::after {
+    top: -16px;
+    border-radius: 50% 50% 0 0;
+}
+
+@media screen and (max-width:800px) {
+    .divMensaje {
+        width:400px
+    }
+    .mensajeSpan {
+        max-width: 70%;
+        font-size: 35px;
+        color: var(--colorTextButton);
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .heart, .heart2 {
+        top: 70px;
+        left:10px;
+        float:left;
+        display: inline-block;
+        position: relative;
+        width: 50px;
+        height: 80px;
+        transform: rotate(45deg);
+        transform-origin: 40px 40px;
+    }
+    .heart div {
+        top: 32px;
+        left: 32px;
+        position: absolute;
+        width: 22px;
+        height: 22px;
+    background: var(--colorPrimari);    }
+
+    .heart div:after,
+    .heart div:before {
+        content: " ";
+        position: absolute;
+        display: block;
+        width: 22px;
+        height: 22px;
+    background: var(--colorPrimari);    }
+    .heart2 div {
+        top: 32px;
+        left: 32px;
+        position: absolute;
+        width: 22px;
+        height: 22px;
+background: rgb(255, 3, 3);      
+    }
+
+    .heart2 div:after,
+    .heart2 div:before {
+        content: " ";
+        position: absolute;
+        display: block;
+        width: 22px;
+        height: 22px;
+background: rgb(255, 3, 3);    }
+
+    .heart div:before, .heart2 div:before {
+        left: -14px;
+        border-radius: 50% 0 0 50%;
+    }
+
+    .heart div:after, .heart2 div::after {
+        top: -14px;
+        border-radius: 50% 50% 0 0;
+    }
+}
