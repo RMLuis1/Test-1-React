@@ -79,11 +79,11 @@ position: relative;
     }
 }
 
-@media only screen and (max-width:500px) {
+@media only screen and (max-width:560px) {
     .heart, .heart2 {
         top: 70px;
-        left:10px;
-        float:left;
+        left:-28%;
+        /* float:left; */
         display: inline-block;
         position: relative;
         width: 50px;
