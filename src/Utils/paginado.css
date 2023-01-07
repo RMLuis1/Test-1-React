@@ -191,7 +191,7 @@
         padding: 0 20px;
         border-radius: 25px 5px 5px 25px;
         width: 60px;
-        height: 40px;
+        height: 20px;
         background-color: var(--colorSecundario);
     }
 
@@ -204,7 +204,7 @@
         padding: 0 20px;
         border-radius: 5px 25px 25px 5px;
         width: 60px;
-        height: 40px;
+        height: 20px;
         background-color: var(--colorSecundario);
 
     }

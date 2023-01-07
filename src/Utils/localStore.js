@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import  {  useEffect, useState } from "react";
 
 export function Favorites() {
   const [favorites, setfavorites] = useState([]);
@@ -6,7 +6,8 @@ export function Favorites() {
 
   const getData = () => {
     return JSON.parse(localStorage.getItem("favoritos"));
-  };
+  }
+ 
   useEffect(() => {
     setfavorites(getData());
   }, [favorites]);

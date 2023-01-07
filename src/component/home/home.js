@@ -73,19 +73,19 @@ export function Home() {
 
   // -------------------------------------------LOADING------------------------
 
-  // const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
 
-  // setTimeout(() => {
-  //   setIsLoading(false);
-  // }, 5000);
+  setTimeout(() => {
+    setIsLoading(false);
+  }, 5000);
 
-  // if (isLoading) {
-  //   return (
-  //     <div>
-  //       <Loading />
-  //     </div>
-  //   );
-  // }
+  if (isLoading) {
+    return (
+      <div>
+        <Loading />
+      </div>
+    );
+  }
 // -------------------------------------------------------------------
   return (
     <div className="containterHome">

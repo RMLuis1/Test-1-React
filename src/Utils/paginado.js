@@ -25,6 +25,7 @@ export default function Paginado({
   maxPageLimit,
 }) {
   const favorite = Favorites();
+  
 
   const [pagina, setPagina] = useState(1);
   const [elementosPorPagina] = useState(itemsPerPage ? itemsPerPage : 10);
