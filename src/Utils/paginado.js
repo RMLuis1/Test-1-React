@@ -178,7 +178,7 @@ export default function Paginado({
           ? mensajeSinElementos
           : dataSlice?.map((e) => (
               <div>
-                {favorite.includes(e.id.toString()) ? heartFavAdd : heartFav}
+                {favorite?.includes(e.id.toString()) ? heartFavAdd : heartFav}
                 <Card key={e.id} element={e} />
                 <div className="divButtonHeart">
                   
@@ -188,7 +188,7 @@ export default function Paginado({
                       className="buttonHeart"
                       value={e.id}
                       placeholder="favoritos"
-                    >{favorite.includes(e.id.toString()) ? 
+                    >{favorite?.includes(e.id.toString()) ? 
                      'Eliminar de Favoritos' : 'Agregar a Favoritos'}
                     </button>
                   
