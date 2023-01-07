@@ -39,7 +39,7 @@ export function Home() {
   // --------------FILTROS POR NOMBRES Y ORDENAMIENTOS--------
 
   const allData =
-    searchText.length > 1
+    searchText.length >= 1
       ? cards.filter((e) =>
           e.title.toLowerCase().includes(searchText.toLowerCase())
         )
@@ -73,19 +73,19 @@ export function Home() {
 
   // -------------------------------------------LOADING------------------------
 
-  const [isLoading, setIsLoading] = useState(true);
+  // const [isLoading, setIsLoading] = useState(true);
 
-  setTimeout(() => {
-    setIsLoading(false);
-  }, 5000);
+  // setTimeout(() => {
+  //   setIsLoading(false);
+  // }, 5000);
 
-  if (isLoading) {
-    return (
-      <div>
-        <Loading />
-      </div>
-    );
-  }
+  // if (isLoading) {
+  //   return (
+  //     <div>
+  //       <Loading />
+  //     </div>
+  //   );
+  // }
 // -------------------------------------------------------------------
   return (
     <div className="containterHome">
@@ -105,8 +105,8 @@ export function Home() {
                 <div className="searchBox">
                   <input
                     className="searchImp"
-                    type="text"
-                    placeholder="  Buscar..."
+                    type="search"
+                                        placeholder="  Buscar..."
                     onChange={(e) => handleImput(e)}
                   />
                   <button className="searchBot">
